@@ -16,8 +16,8 @@ Use Generic CRC in 2 steps:
     - **poly**: The ***normal representation*** of the generation polynomial of the CRC
     - **initCRC**: The value used to initialize the CRC value / register
     - **refin**: If this value is True, each input byte is reflected before being used in the calculation. Reflected means that the bits of the input byte are used in reverse order.
-    - refout:  If this value is True, the final CRC value is reflected before being returned. The reflection is done over the whole CRC value.
-    - xorout: This value is xored to the final CRC value before being returned.
+    - **refout**:  If this value is True, the final CRC value is reflected before being returned. The reflection is done over the whole CRC value.
+    - **xorout**: This value is xored to the final CRC value before being returned.
     For example, to calculate CRC32C:<br>
     ```
     crc32c = GenericCRC("CRC32C", crcLen=32, poly=0x1EDC6F41, initCRC=0xFFFFFFFF, refin=True, refout=True, xorout=0xFFFFFFFF)<br>
