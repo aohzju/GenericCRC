@@ -24,7 +24,7 @@ Use Generic CRC in 2 steps:
     ```
 2. Call the object's Calculate() method on the message whose CRC is to be calculated. For example, to calculate CRC32C for messeage "Hello, World!":<br>
     ```
-    msg = "Hello, World".encode('utf-8') <br>
+    msg = "Hello, World".encode('utf-8')
     crc = crc32c.Calculate(msg)
     ```
   Note, the method Calculate expects an input of bytes or bytearray type.<br>
