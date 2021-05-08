@@ -1,9 +1,9 @@
 # GenericCRC
-A generic CRC implementation in Python, which supports arbitrary CRC size.
+A generic CRC implementation in Python, which supports arbitrary CRC sizes.
 
 ---
 
-Class GenericCRC is a generic CRC implementation supporting arbitrary CRC sizes (>=8). 
+Class GenericCRC is a generic CRC implementation supporting arbitrary CRC sizes (>=8) and parametrization. 
 
 ## Usage
 Use Generic CRC in 2 steps:
@@ -31,4 +31,5 @@ Use Generic CRC in 2 steps:
   You can also call the **Check()** method to see the check value of the constructed CRC object. The check value is the CRC value of input string "123456789" encoded in utf-8.
   
 ## Sanity Check
-GenericCRC.py has sanity checks. Directly run "python GenericCRC.py" to see the test results. All test vectors are from https://reveng.sourceforge.io/crc-catalogue/all.htm
+GenericCRC.py has sanity checks. Directly run "python GenericCRC.py" to see the test results. All test vectors are from https://reveng.sourceforge.io/crc-catalogue/all.htm <br>
+After constructing a CRC object, you can also call its **Check()** method to see the CRC digest of string "123456789" as a sanity check.
